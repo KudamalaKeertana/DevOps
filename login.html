@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Homepage</title>
+    <title>Login/Signup</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Website</h1>
+        <h1>Login or Signup</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,11 +18,16 @@
         </nav>
     </header>
     <main>
-        <p>Welcome to Keeru Company's Home page. 
-           The owner of this company is Miss K.Keertana. 
-           Enjoy our site. 
-           Always stay Happy with a Smile.  
-        </p>
+        <h2>Login</h2>
+        <form action="login_process.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
     </main>
     <footer>
         <p>&copy; 2023 Keeru Company</p>
